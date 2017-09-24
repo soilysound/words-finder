@@ -86,7 +86,7 @@ br {
 
 .word-header {
   font-size: 1.3em;
-  padding: 1em 0;
+  padding: 0.4em 0 0.8em;
   clear: both;
   border-top: 1px solid #ccc;
   position: sticky;
@@ -206,6 +206,12 @@ br {
  }
 
  @media all and (max-width: 600px){
+
+   .card {
+     background: white;
+     padding: 0.8em 1.2em 1.2em 1.2em;
+   }
+
    .word {
      width: 33%;
    }
