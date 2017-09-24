@@ -53,9 +53,13 @@ button {
    fill: white;
  }
 
+ .advert {
+   min-height: 50vh;
+   padding: 1em 0;
+ }
 
 .words {
-  min-height: 50vh;
+  min-height: 10vh;
 }
 
 .word {
