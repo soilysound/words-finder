@@ -54,7 +54,6 @@ button {
  }
 
  .advert {
-   min-height: 50vh;
    padding: 1em 0;
  }
 
@@ -114,6 +113,15 @@ br {
    max-width: 700px;
  }
 
+ .description {
+   max-width: 700px;
+   margin: 2em auto 2.5em;
+   color: #aaa;
+   font-size: 16px;
+   line-height: 1.6;
+   font-family: sans-serif;
+ }
+
  .card:empty {
    visibility: hidden;
    position: absolute;
@@ -168,7 +176,7 @@ br {
  }
 
  footer {
-   padding: 1em 0 3em;;
+   padding: 1em 0 2em;
    color: #ccc
  }
 
