@@ -227,7 +227,12 @@ document.querySelector('form').onsubmit = function(event){
   }, 50)
 }
 
-document.querySelector('input').onkeyup = function(){
+document.querySelector('input').onkeyup = function(event){
+
+  if(!this.value.match(/^[a-z?]+$/ig)){
+    this.value = this.value.replace(event.key, '')
+  }
+
   if(this.value.match(/\?/g) && this.value.match(/\?/g).length === 3){
     var index = this.value.lastIndexOf('?');
     this.value = this.value.replace(/\?/g, function(item, ind){
