@@ -220,11 +220,15 @@ function getResults(){
 
 document.querySelector('form').onsubmit = function(event){
   event.preventDefault();
-  loading(true, 'Fetching words');
-  document.querySelector('#results').innerHTML = "";
-  setTimeout(function(){
-    getResults();
-  }, 50)
+  if(document.querySelector('input').value.length > 2 && document.querySelector('input').value.match(/^[a-z?]+$/ig)){
+    loading(true, 'Fetching words');
+    document.querySelector('#results').innerHTML = "";
+    setTimeout(function(){
+
+        getResults();
+
+    }, 50)
+  }
 }
 
 document.querySelector('input').onkeyup = function(event){
