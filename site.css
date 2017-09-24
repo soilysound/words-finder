@@ -108,7 +108,12 @@ br {
    margin: 0 auto 1em;
    width: 90%;
    max-width: 700px;
+ }
 
+ .card:empty {
+   visibility: hidden;
+   position: absolute;
+   pointer-events: none;
  }
 
  .card:after {

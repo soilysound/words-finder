@@ -202,7 +202,7 @@ function getResults(){
   })
 
 
-  var html = '';
+  var html = results.length ? '' : '<p>No results</p>';
   var len = 0;
 
   results.forEach (function(item){
@@ -213,7 +213,7 @@ function getResults(){
     len = item.data.length;
   });
 
-  document.querySelector('#results').innerHTML = "<div class=''card'>" + html + "</div>";
+  document.querySelector('#results').innerHTML = "<div class='card'>" + html + "</div>";
 
 
 }
